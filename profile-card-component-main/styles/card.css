@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("./../images/bg-pattern-top.svg") no-repeat -20vw -70vh, #19a2ae url("./../images/bg-pattern-bottom.svg") no-repeat 50vw 50vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* centrer dans le sens de la largeur */
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 370px;
+  height: 370px;
+  background: white;
+  border-radius: 20px;
+}
+.card__header {
+  background: url("./../images/bg-pattern-card.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  flex: 3;
+  border-radius: 20px 20px 0 0;
+}
+.card__header .head-victor img {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  border: white solid 5px;
+  top: -120px;
+}
+.card__content {
+  flex: 3;
+}
+.card__footer {
+  flex: 2;
+  border-top: rgba(150, 150, 150, 0.4) 1px solid;
+}
+
+/*# sourceMappingURL=card.css.map */

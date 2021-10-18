@@ -1,0 +1,86 @@
+// lancer la commade
+// sass .\sass\card.scss .\styles\card.css --watch 
+//  pour compiler sass en css
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// Primary
+// Dark cyan: hsl(185, 75%, 39%) Very dark desaturated blue: hsl(229, 23%, 23%) Dark grayish blue: hsl(227, 10%, 46%)
+$primary-cyan: hsl(185, 75%, 39%);
+$primary-dark-blue: hsl(229, 23%, 23%);
+$primary-gray-blue: hsl(227, 10%, 46%);
+// Neutral
+// Dark gray: hsl(0, 0%, 59%)
+$neutral-gray: hsl(0, 0%, 59%);
+// Typography Font size (name and stats):
+$font-size: 18px;
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;   
+    background:
+    url("./../images/bg-pattern-top.svg") no-repeat -20vw -70vh,
+    $primary-cyan url("./../images/bg-pattern-bottom.svg") no-repeat 50vw 50vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* centrer dans le sens de la largeur */
+    align-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 370px;
+    height: 370px;
+    background: white;
+    border-radius: 20px;
+
+    &__header {
+        background: url("./../images/bg-pattern-card.svg");
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        flex:3;
+        border-radius: 20px 20px 0 0;
+        
+
+        .head-victor {
+
+            img {
+                position: absolute;
+                width: 96px;
+                height: 96px;
+                border-radius: 48px;
+                border: white solid 5px;
+                top: -120px;
+
+                
+                
+            }
+            
+        }
+    }
+
+    &__content {
+        flex:3;
+    }
+
+    &__footer {
+        flex:2;
+        border-top: rgba($neutral-gray, .4) 1px solid;
+    }
+
+    
+}
+

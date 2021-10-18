@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/_reset.css">
+  <link rel="stylesheet" href="styles/card.css">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,21 +16,47 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <main>
+    <section>
+      <div class="card">
+        <div class="card__header">
+          <div  class="head-victor">
+            <img src="./images/image-victor.jpg" alt="Victor" srcset="">
+          </div>
+          
+        </div>
+        <div class="card__content">
+          <span class="">
+            Victor Crest
+          </span>
+          <span class="">
+             26
+          </span>
+          <span class="">
+            London
+          </span>            
+        </div>
+        <div class="card__footer">
+          80K
+          Followers
 
-  80K
-  Followers
+          803K
+          Likes
 
-  803K
-  Likes
+          1.4K
+          Photos
+        </div>
+      </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Carole Barbier</a>.
+    </div>
+  </footer>
+  
 </body>
 </html>
