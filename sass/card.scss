@@ -28,7 +28,7 @@ body {
     }
     @media screen and (min-width: 901px) {
     background:
-    url("./../images/bg-pattern-top.svg") no-repeat -20vw -80vh,
+    url("./../images/bg-pattern-top.svg") no-repeat -20vw -65vh,
     $primary-cyan url("./../images/bg-pattern-bottom.svg") no-repeat 48vw 48vh;
     }
    
@@ -51,6 +51,8 @@ main {
     justify-content: center;
     align-items: center; /* centrer dans le sens de la largeur */
     align-content: center;
+    margin-top: 50px;
+    margin-left: 140px;
 }
 
 .card {
@@ -62,7 +64,7 @@ main {
     background: white;
     border-radius: 20px;
     // box-shadow: 0px 40px 100px hsla(229, 23%, 23%,.4);
-    box-shadow: 0px 100px 200px hsla(229, 23%, 23%,.4);
+    box-shadow: 0px 50px 100px hsla(229, 23%, 23%,.4);
     
     &__header {
         background: url("./../images/bg-pattern-card.svg");
