@@ -14,6 +14,8 @@ $primary-gray-blue: hsl(227, 10%, 46%);
 $neutral-gray: hsl(0, 0%, 59%);
 // Typography Font size (name and stats):
 $font-size: 18px;
+$fontweight-normal: 400;
+$fontweight-bold : 700;
 
 body {
     font-family: 'Kumbh Sans', sans-serif;   
@@ -24,7 +26,8 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;  
+    font-weight: $fontweight-normal;  
 }
 
 main {
@@ -54,29 +57,54 @@ main {
         border-radius: 20px 20px 0 0;
         
 
+        // .head-victor {
+
+        //     img {
+        //         position: relative;
+        //         top: 85px;
+        //         margin-left: 120px;
+        //         width: 110px;
+        //         height: 110px;
+        //         border-radius: 55px;
+        //         border: white solid 5px;
+        //         background-color: white;
+        //     }
+            
+        // }
+    }
+
+    &__content {
+        flex:3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         .head-victor {
 
             img {
-                position: relative;
-                top: 85px;
-                margin-left: 120px;
+                // position: relative;
+                margin-top: -90px;
                 width: 110px;
                 height: 110px;
                 border-radius: 55px;
                 border: white solid 5px;
                 background-color: white;
-                
-
-                
-                
             }
             
         }
-    }
-
-    &__content {
-        flex:3;
         
+        .txt {
+            margin-top: 10px;
+            .name_stat {
+                color: $primary-dark-blue;
+                font-weight: $fontweight-bold;
+            }
+
+            .city {
+                color: $primary-gray-blue;
+            }
+        }
+
     }
 
     &__footer {
@@ -85,12 +113,25 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        
 
         & > div {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+
+            .name_stat {
+                color: $primary-dark-blue;
+                font-weight: $fontweight-bold;
+                margin-bottom: 10px;
+            }
+
+            .gray-text {
+                color: $primary-gray-blue;
+                font-size: .6em;
+                letter-spacing: .1em;
+            }
         }
     }
 
